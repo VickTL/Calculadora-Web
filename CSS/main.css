@@ -23,8 +23,7 @@
 }
 
 .vl {
-  border-left: 6px solid gray;
-  height: 500px;
+  border-left: 2pt solid gray;
   position: absolute;
   left: 50%;
   margin-left: -3px;
@@ -33,7 +32,7 @@
 
 body {
     text-align: justify;
-    width: 1000px;
+    width: 800px;
     margin: 52px;
     max-width: 100%;
 }
