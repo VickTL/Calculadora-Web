@@ -22,6 +22,16 @@
     url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT") format("svg");
 }
 
+.vl {
+  border-left: 2pt solid rgb(102,102,102);
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+
+}
+
 .split {
   height: 100%;
   width: 50%;
@@ -65,7 +75,7 @@ h1 {
 h2 {
     font-family: "Tw Cen MT";
     font-size : 24pt;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 p {
