@@ -44,10 +44,13 @@
 
 
 .texto {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     text-align: justify;
-    width: 800px;
-    margin-left: 52px;
-    margin-right: 52px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     max-width: 100%;
 }
 
@@ -56,6 +59,7 @@ h1 {
     font-family: "Tw Cen MT";
     font-size : 72pt;
     font-weight: normal;
+    display: inline;
 }
 
 h2 {
@@ -68,4 +72,10 @@ p {
     font-family: "Tw Cen MT";
     font-size : 18pt;
     font-weight: normal;
+}
+
+hr {
+    width: 100%;
+    background-color: #ff3366;
+    height: 1pt;
 }
