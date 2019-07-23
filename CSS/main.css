@@ -22,6 +22,10 @@
     url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT") format("svg");
 }
 
+body {
+    with: 36em;
+}
+
 h1 {
     color : #ff3366;
     font-family: "Tw Cen MT";
