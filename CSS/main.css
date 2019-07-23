@@ -1,0 +1,41 @@
+/* Tipografías: Principalmente "Tw Cen MT" Regular y bold
+/* A veces tambien "Tw Cen MT Condensed Extra Bold"
+
+/* Color secundario: #FF3366 / RGB(255, 51, 102)
+/* Gris de fondo: #CCCCCC / RGB(204, 204, 204)
+
+/* Tamaños de Tipografías
+/*      h1 = 72 pt
+/*      h2 = 24 pt (Bold)
+/*      p = 18 pt
+
+/* El numero grande (64.16) que aparece en el segundo mock es:
+/* Tw Cen MT Condensed Extra Bold, 150 pt
+*/
+@font-face {font-family: "Tw Cen MT";
+    src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot");
+    src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT") format("svg");
+}
+
+h1 {
+    color : #ff3366;
+    font-family: "Tw Cen MT";
+    font-size : 72;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Tw Cen MT";
+    font-size : 24;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Tw Cen MT";
+    font-size : 18;
+    font-weight: normal;
+}
