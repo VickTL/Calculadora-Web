@@ -23,7 +23,9 @@
 }
 
 body {
-    with: 36em;
+    width: 36em;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 h1 {
