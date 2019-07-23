@@ -22,10 +22,18 @@
     url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT") format("svg");
 }
 
+.vl {
+  border-left: 6px solid gray;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
 
 body {
     text-align: justify;
-    width: 553px;
+    width: 1000px;
     margin: 52px;
     max-width: 100%;
 }
