@@ -25,18 +25,18 @@
 h1 {
     color : #ff3366;
     font-family: "Tw Cen MT";
-    font-size : 72;
+    font-size : 72pt;
     font-weight: normal;
 }
 
 h2 {
     font-family: "Tw Cen MT";
-    font-size : 24;
+    font-size : 24pt;
     font-weight: bold;
 }
 
 p {
     font-family: "Tw Cen MT";
-    font-size : 18;
+    font-size : 18pt;
     font-weight: normal;
 }
