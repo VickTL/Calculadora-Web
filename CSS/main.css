@@ -23,6 +23,7 @@
 }
 
 body {
+    text-align: justify;
     width: 45em;
     margin: 52px;
     max-width: 100%;
