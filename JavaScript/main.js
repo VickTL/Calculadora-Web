@@ -62,3 +62,10 @@ function calcLineasIdeales(masMenos, lineasActual, filas) {
 
     return lineasIdeal;
 }
+
+function medidas() {
+    if(document.getElementByClass("A4btn").checked && document.getElementByClass("Vbtn").checked) {
+        altura = a4ver;
+    }
+    console.log(altura);
+}

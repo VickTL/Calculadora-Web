@@ -13,63 +13,90 @@
 /* Tw Cen MT Condensed Extra Bold, 150 pt
 */
 
+.form  {
+    overflow: auto;
+}
+
 .btnForm {
     width: 100%;
-    height: 185px;
-
+    height: 100px;
     /* border: 1px solid black; */
 }
 
-.btnForm input[type=button] {
+.btnForm label {
+    float:left;
     margin: 2%;
-    max-width: 15.5%;
-    max-height: 150px;
-    width: 100vw;
-    height: 100vw;
+    max-width: 15.75%;
+    width: 100%;
     border-radius: 15px;
     background-color: white;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+}
 
-    color : black;
+.btnForm label span {
+    color: black;
     font-family: "Tw Cen MT";
     font-size : 24pt;
     font-weight: bold;
-    display: inline;
+    display: block;
     text-align: center;
+    padding: 13px 0;
 }
 
-.btnForm input[type=button]:focus {
+.btnForm label input {
+    position:absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.btnForm input:checked + span {
     background-color: #ff3366;
     color: white;
 }
 
 .btnForm1 {
     width: 100%;
-    height: 104px;
-
-    /*border: 1px solid black;*/
+    height: 100px;
+    /* border: 1px solid black; */
 }
 
-.btnForm1 input[type=button] {
+.btnForm1 label {
+    float:left;
     margin: 2%;
-    max-width: 45.5%;
-    max-height: 75px;
+    max-width: 45.7%;
     width: 100%;
-    height: 100%;
     border-radius: 15px;
     background-color: white;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+}
 
-    color : black;
+.btnForm1 label span {
+    color: black;
     font-family: "Tw Cen MT";
     font-size : 24pt;
     font-weight: bold;
-    display: inline;
+    display: block;
     text-align: center;
+    padding: 13px 0;
 }
 
-.btnForm1 input[type=button]:focus {
+.btnForm1 label input {
+    position:absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.btnForm1 input:checked + span {
     background-color: #ff3366;
     color: white;
 }
+
 
 .margenes {
     float: left;
@@ -81,6 +108,7 @@
 
 .margenes input[type=number] {
     padding: 1%;
+    border:1px solid #D0D0D0;
     border-radius: 15px;
     float: right;
     width: 75px;
@@ -97,6 +125,7 @@
 
 .final {
     margin-top: 24pt;
+    overflow: auto;
 }
 
 .final p {
@@ -128,7 +157,7 @@
     text-align: center;
 }
 
-.final input[type=button]:focus {
+.final input[type=button]:active {
     background-color: #ff3366;
     color: white;
 }
@@ -151,6 +180,7 @@
 .right {
   right: 0;
   background-color: #CCCCCC;
+  border-left: 2pt solid rgb(153,153,153);
 }
 
 

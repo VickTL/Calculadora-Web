@@ -31,37 +31,37 @@
                 <form class="form" action="index.html" method="post">
 
 
-                <h2>1. Formato</h2>
+                    <h2>1. Formato</h2>
 
-                <div class="btnForm">
-                    <input id="A5btn" type="button" value="A5"></input>
-                    <input id="A4btn" type="button" value="A4"></input>
-                    <input id="A3btn" type="button" value="A3"></input>
-                    <input id="HDbtn" type="button" value="1080p"></input>
-                    <input id="Otherbtn" type="button" value="+"></input>
-                </div>
+                    <div class="btnForm">
+                        <label class="A5btn"><input type="radio" name="toggle"><span>A5</span></label>
+                        <label class="A4btn"><input type="radio" name="toggle"><span>A4</span></label>
+                        <label class="A3btn"><input type="radio" name="toggle"><span>A3</span></label>
+                        <label class="HDbtn"><input type="radio" name="toggle"><span>1080p</span></label>
+                        <label class="Otherbtn"><input type="radio" name="toggle"><span>+</span></label>                    </div>
 
-                <h2>2. Orientación</h2>
+                    <h2>2. Orientación</h2>
 
-                <div class="btnForm1">
-                    <input id="Vbtn" type="button" value="Vertical"></input>
-                    <input id="Hbtn" type="button" value="Horizontal"></input>
-                </div>
+                    <div class="btnForm1">
+                        <label class="Vbtn"><input type="radio" name="toggle2"><span>Vertical</span></label>
+                        <label class="Hbtn"><input type="radio" name="toggle2"><span>Horizontal</span></label>
+                    </div>
 
-                <div class="margenes">
-                    <h2>3. Medida de márgenes</h2>
-                    <input type="number" value="36"></input>
-                </div>
+                    <div class="margenes">
+                        <h2>3. Medida de márgenes</h2>
+                        <input type="number" value="36">
+                    </div>
 
-                <div class="margenes">
-                    <h2>4. Divisiones de la estructura</h2>
-                    <input type="number" value="4"></input>
-                </div>
+                    <div class="margenes">
+                        <h2>4. Divisiones de la estructura</h2>
+                        <input type="number" value="4">
+                    </div>
 
-                <div class="margenes">
-                    <h2>5. Interlineado</h2>
-                    <input type="number" value="12"></input>
-                </div>
+                    <div class="margenes">
+                        <h2>5. Interlineado</h2>
+                        <input type="number" value="12">
+                    </div>
+                </form>
 
                 <div class="final">
                     <img src="img/info.png">
@@ -70,10 +70,9 @@
                     <img src="img/info.png">
                     <p>Cómo ajustar el documento</p>
 
-                    <input type="button" value="LISTO"></input>
+                    <input type="button" value="LISTO" onclick="medidas()">
                 </div>
 
-                </form>
             </div>
         </div>
 
