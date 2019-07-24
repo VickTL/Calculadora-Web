@@ -13,23 +13,124 @@
 /* Tw Cen MT Condensed Extra Bold, 150 pt
 */
 
-@font-face {font-family: "Tw Cen MT";
-    src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot");
-    src: url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9b62dc86f936227b3f7b367bd0b6c05e.svg#Tw Cen MT") format("svg");
+.btnForm {
+    width: 100%;
+    height: 185px;
+
+    /* border: 1px solid black; */
 }
 
-.vl {
-  border-left: 2pt solid rgb(102,102,102);
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
+.btnForm input[type=button] {
+    margin: 2%;
+    max-width: 15.5%;
+    max-height: 150px;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 15px;
+    background-color: white;
 
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.btnForm input[type=button]:focus {
+    background-color: #ff3366;
+    color: white;
+}
+
+.btnForm1 {
+    width: 100%;
+    height: 104px;
+
+    /*border: 1px solid black;*/
+}
+
+.btnForm1 input[type=button] {
+    margin: 2%;
+    max-width: 45.5%;
+    max-height: 75px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: white;
+
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.btnForm1 input[type=button]:focus {
+    background-color: #ff3366;
+    color: white;
+}
+
+.margenes {
+    float: left;
+    width: 100%;
+    padding: 7pt 0;
+
+    /* border: 1px solid black;*/
+}
+
+.margenes input[type=number] {
+    padding: 1%;
+    border-radius: 15px;
+    float: right;
+    width: 75px;
+    margin-right: 2%;
+
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+
+.final {
+    margin-top: 24pt;
+}
+
+.final p {
+    display: inline;
+}
+
+.final img {
+    width: 20pt;
+    height: 20pt;
+    float: left;
+    margin-right: 5pt;
+}
+
+.final input[type=button] {
+    float: right;
+    height: 75px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2pt solid #ff3366;
+    margin-right: 2%;
+    margin-top: -28.8pt;
+
+    color : #ff3366;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.final input[type=button]:focus {
+    background-color: #ff3366;
+    color: white;
 }
 
 .split {
@@ -75,7 +176,8 @@ h1 {
 h2 {
     font-family: "Tw Cen MT";
     font-size : 24pt;
-    font-weight: normal;
+    font-weight: bold;
+    display: inline;
 }
 
 p {
