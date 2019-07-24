@@ -56,6 +56,13 @@
     background-color: #ff3366;
     color: white;
 }
+.VH {
+    display: block;
+}
+
+.Custom {
+    display: none;
+}
 
 .btnForm1 {
     width: 100%;
@@ -97,6 +104,43 @@
     color: white;
 }
 
+.btnForm2 {
+    width: 100%;
+    height: 100px;
+}
+
+.btnForm2 input {
+    padding: 13px 0;
+    border:1px solid #D0D0D0;
+    border-radius: 15px;
+    width: 40.1%;
+    margin: 2%;
+    height: 35.556px;
+
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.btnForm2 input[id="CustomV"] {
+    float: left;
+}
+
+.btnForm2 input[id="CustomH"] {
+    float: right;
+}
+
+.btnForm2 button {
+    height: 61.556px;
+    width: 61.556px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2pt solid #ff3366;
+    margin: 2%
+}
 
 .margenes {
     float: left;
@@ -177,12 +221,6 @@
   background-color: white;
 }
 
-.right {
-  right: 0;
-  background-color: #CCCCCC;
-  border-left: 2pt solid rgb(153,153,153);
-}
-
 
 .texto {
     position: absolute;
@@ -220,4 +258,23 @@ hr {
     width: 100%;
     background-color: #ff3366;
     height: 1pt;
+}
+
+.right {
+  right: 0;
+  background-color: #CCCCCC;
+  border-left: 2pt solid rgb(153,153,153);
+  align-items: center;
+  align-content: center;
+
+}
+
+
+.canvas {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 10%;
+
+    background-color: white;
 }

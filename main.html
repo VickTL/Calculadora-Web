@@ -5,9 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="CSS/main.css">
-        <script scr="JavaScript/main.js"></script>
-
-        <link href="//db.onlinewebfonts.com/c/9b62dc86f936227b3f7b367bd0b6c05e?family=Tw+Cen+MT" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="JavaScript/main.js"></script>
+        <script src="https://kit.fontawesome.com/9904a46dd0.js"></script>
 
         <title>Calculadora de Márgenes</title>
 
@@ -34,17 +33,29 @@
                     <h2>1. Formato</h2>
 
                     <div class="btnForm">
-                        <label class="A5btn"><input type="radio" name="toggle"><span>A5</span></label>
-                        <label class="A4btn"><input type="radio" name="toggle"><span>A4</span></label>
-                        <label class="A3btn"><input type="radio" name="toggle"><span>A3</span></label>
-                        <label class="HDbtn"><input type="radio" name="toggle"><span>1080p</span></label>
-                        <label class="Otherbtn"><input type="radio" name="toggle"><span>+</span></label>                    </div>
+                        <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()"><span>A5</span></label>
+                        <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()"><span>A4</span></label>
+                        <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()"><span>A3</span></label>
+                        <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()"><span>1080p</span></label>
+                        <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2()" id="Othbtn"><span>+</span></label>                    </div>
 
-                    <h2>2. Orientación</h2>
+                    <div class="VH" id="VHdiv">
+                        <h2>2. Orientación</h2>
 
-                    <div class="btnForm1">
-                        <label class="Vbtn"><input type="radio" name="toggle2"><span>Vertical</span></label>
-                        <label class="Hbtn"><input type="radio" name="toggle2"><span>Horizontal</span></label>
+                        <div class="btnForm1">
+                            <label class="Vbtn"><input type="radio" name="toggle2" id="Vbtn"><span>Vertical</span></label>
+                            <label class="Hbtn"><input type="radio" name="toggle2" id="Hbtn"><span>Horizontal</span></label>
+                        </div>
+                    </div>
+
+                    <div class="Custom" id="Customdiv">
+                        <h2>2. Medidas</h2>
+
+                        <div class="btnForm2">
+                            <input type="number" placeholder="Vertical" id="CustomV">
+                            <button type="button" name="button" onclick="switchValues()"><span style="color: #ff3366;"><i class="fas fa-exchange-alt fa-2x"></span></i></button>
+                            <input type="number" placeholder="Horizontal" id="CustomH">
+                        </div>
                     </div>
 
                     <div class="margenes">
@@ -70,7 +81,7 @@
                     <img src="img/info.png">
                     <p>Cómo ajustar el documento</p>
 
-                    <input type="button" value="LISTO" onclick="medidas()">
+                    <input type="button" value="LISTO" onclick="medidas()" id="Listobtn">
                 </div>
 
             </div>
@@ -96,6 +107,9 @@
                 Cada vez que se actualiza el interlineado se calcLineasActuales y se divide
                 la altura del segundo rectangulo entre las lineasActual.
             -->
+
+            <div class="canvas" id="canvas">
+            </div>
 
         </div>
 
