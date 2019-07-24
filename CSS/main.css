@@ -20,18 +20,20 @@
 .btnForm {
     width: 100%;
     height: 100px;
+    display: flex;
     /* border: 1px solid black; */
 }
 
 .btnForm label {
     float:left;
     margin: 2%;
-    max-width: 15.75%;
+    max-height: 64px;
+    box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
     background-color: white;
     border:1px solid #D0D0D0;
-    overflow:auto;
+    overflow: hidden;
 }
 
 .btnForm label span {
@@ -68,17 +70,20 @@
     width: 100%;
     height: 100px;
     /* border: 1px solid black; */
+
+    display: flex;
 }
 
 .btnForm1 label {
     float:left;
     margin: 2%;
-    max-width: 45.7%;
+    /*max-width: 45.7%;*/
     width: 100%;
+    height: 64px;
     border-radius: 15px;
     background-color: white;
     border:1px solid #D0D0D0;
-    overflow:auto;
+    overflow: hidden;
 }
 
 .btnForm1 label span {
@@ -99,7 +104,7 @@
     width: 0;
 }
 
-.btnForm1 input:checked + span {
+.btnForm1 input:checked {
     background-color: #ff3366;
     color: white;
 }
@@ -107,55 +112,49 @@
 .btnForm2 {
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btnForm2 input {
     padding: 13px 0;
-    border:1px solid #D0D0D0;
+    border: 1px solid #D0D0D0;
     border-radius: 15px;
-    width: 40.1%;
     margin: 2%;
-    height: 35.556px;
+    height: 64px;
+    box-sizing: border-box;
 
-    color : black;
+
     font-family: "Tw Cen MT";
-    font-size : 24pt;
-    font-weight: bold;
-    display: inline;
+    font-size: 21pt;
     text-align: center;
 }
 
-.btnForm2 input[id="CustomV"] {
-    float: left;
-}
-
-.btnForm2 input[id="CustomH"] {
-    float: right;
-}
-
 .btnForm2 button {
-    height: 61.556px;
-    width: 61.556px;
+    height: 61px;
+    width: 61px;
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
-    margin: 2%
+    margin: 2%;
+
+    flex-basis: auto;
 }
 
 .margenes {
-    float: left;
     width: 100%;
-    padding: 7pt 0;
-
+    display: flex;
+    justify-content: space-between;
     /* border: 1px solid black;*/
 }
 
 .margenes input[type=number] {
-    padding: 1%;
+    padding: 13px;
     border:1px solid #D0D0D0;
     border-radius: 15px;
     float: right;
-    width: 75px;
+    width: 90px;
+    height: 34px;
     margin-right: 2%;
 
     color : black;
@@ -168,7 +167,6 @@
 
 
 .final {
-    margin-top: 24pt;
     overflow: auto;
 }
 
