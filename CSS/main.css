@@ -70,7 +70,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 .btnForm label span {
     color: black;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: block;
     text-align: center;
@@ -121,7 +121,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 .btnForm1 label span {
     color: black;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: block;
     text-align: center;
@@ -158,7 +158,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     flex-grow: 1;
 
     font-family: "Tw Cen MT";
-    font-size: 21pt;
+    font-size : 1.8em;
     font-weight: bold;
     text-align: center;
 }
@@ -193,7 +193,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
     color : black;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     text-align: center;
@@ -233,7 +233,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
     color : #ff3366;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     text-align: center;
@@ -266,7 +266,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
     color : #ff3366;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     text-align: center;
@@ -293,7 +293,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
     color : black;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     text-align: center;
@@ -371,7 +371,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
     color : #ff3366;
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     text-align: center;
@@ -414,21 +414,21 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 h1 {
     color : #ff3366;
     font-family: "Tw Cen MT";
-    font-size : 72pt;
+    font-size : 6em;
     font-weight: normal;
     display: inline;
 }
 
 h2 {
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
 }
 
 h3 {
     font-family: "Tw Cen MT";
-    font-size : 24pt;
+    font-size : 2em;
     font-weight: bold;
     display: inline;
     color: #ff3366;
@@ -436,7 +436,7 @@ h3 {
 
 p {
     font-family: "Tw Cen MT";
-    font-size : 18pt;
+    font-size : 1.5em;
     font-weight: normal;
 }
 
