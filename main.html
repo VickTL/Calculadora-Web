@@ -15,74 +15,86 @@
 
         <div class="split left">
             <div class="texto">
+                <div class="Pag1" id="Pag1">
+                    <h1>Bienvenido</h1>
 
-                <h1>Bienvenido</h1>
+                    <hr>
 
-                <hr>
+                    <p>Este programa te ayudará a hacer una estructura correcta en la apliación
+                    de Adobe InDesign, de forma que quede un numero de líneas entero y divisible
+                    en filas de estructura adecuadas.</p>
 
-                <p>Este programa te ayudará a hacer una estructura correcta en la apliación
-                de Adobe InDesign, de forma que quede un numero de líneas entero y divisible
-                en filas de estructura adecuadas.</p>
+                    <p>Crea un documento e introduce aquí los datos usados:</p>
 
-                <p>Crea un documento e introduce aquí los datos usados:</p>
-
-                <form class="form" action="index.html" method="post">
+                    <form class="form" action="index.html" method="post">
 
 
-                    <h2>1. Formato</h2>
+                        <h2>1. Formato</h2>
 
-                    <div class="btnForm">
-                        <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()" onfocus="medidas()"><span>A5</span></label>
-                        <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()" onfocus="medidas()"><span>A4</span></label>
-                        <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()" onfocus="medidas()"><span>A3</span></label>
-                        <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()" onfocus="medidas()"><span>1080p</span></label>
-                        <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2()" id="Othbtn"><span>+</span></label>                    </div>
+                        <div class="btnForm">
+                            <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()" onfocus="medidas()"><span>A5</span></label>
+                            <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()" onfocus="medidas()"><span>A4</span></label>
+                            <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()" onfocus="medidas()"><span>A3</span></label>
+                            <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()" onfocus="medidas()"><span>1080p</span></label>
+                            <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2()" id="Othbtn"><span>+</span></label>                    </div>
 
-                    <div class="VH" id="VHdiv">
-                        <h2>2. Orientación</h2>
+                        <div class="VH" id="VHdiv">
+                            <h2>2. Orientación</h2>
 
-                        <div class="btnForm1">
-                            <label class="Vbtn"><input type="radio" name="toggle2" id="Vbtn" onclick="medidas()"><span>Vertical</span></label>
-                            <label class="Hbtn"><input type="radio" name="toggle2" id="Hbtn" onclick="medidas()"><span>Horizontal</span></label>
+                            <div class="btnForm1">
+                                <label class="Vbtn"><input type="radio" name="toggle2" id="Vbtn" onclick="medidas()"><span>Vertical</span></label>
+                                <label class="Hbtn"><input type="radio" name="toggle2" id="Hbtn" onclick="medidas()"><span>Horizontal</span></label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="Custom" id="Customdiv">
-                        <h2>2. Medidas</h2>
+                        <div class="Custom" id="Customdiv">
+                            <h2>2. Medidas</h2>
 
-                        <div class="btnForm2">
-                            <input type="number" placeholder="Vertical" id="CustomV">
-                            <button type="button" name="button" onclick="switchValues()"><span style="color: #ff3366;"><i class="fas fa-exchange-alt fa-2x"></span></i></button>
-                            <input type="number" placeholder="Horizontal" id="CustomH">
+                            <div class="btnForm2">
+                                <input type="number" placeholder="Vertical" id="CustomV" onchange="medidas()" step="any" min="0">
+                                <button type="button" name="button" onclick="switchValues()"><span style="color: #ff3366;"><i class="fas fa-exchange-alt fa-2x"></span></i></button>
+                                <input type="number" placeholder="Horizontal" id="CustomH" onchange="medidas()" step="any" min="0">
+                            </div>
                         </div>
+
+                        <div class="margenes">
+                            <h2>3. Medida de márgenes</h2>
+                            <input type="number" value="36" id="margenes" onchange="medidas()" step="any" min="0">
+                        </div>
+
+                        <div class="margenes">
+                            <h2>4. Divisiones de la estructura</h2>
+                            <input type="number" value="4" id="divisiones" onchange="medidas()" min="0">
+                        </div>
+
+                        <div class="margenes">
+                            <h2>5. Interlineado</h2>
+                            <input type="number" value="12" id="interlineado" onchange="medidas()" min="0">
+                        </div>
+                    </form>
+
+                    <div class="final">
+                        <img src="img/info.png">
+                        <p>Cómo mostrar la cuadrícula base</p>
+                        <br><br>
+                        <img src="img/info.png">
+                        <p>Cómo ajustar el documento</p>
+
+                        <input type="button" value="LISTO" onclick="page12()" id="Listobtn">
                     </div>
-
-                    <div class="margenes">
-                        <h2>3. Medida de márgenes</h2>
-                        <input type="number" value="36" id="margenes" onchange="medidas()">
-                    </div>
-
-                    <div class="margenes">
-                        <h2>4. Divisiones de la estructura</h2>
-                        <input type="number" value="4" id="divisiones" onchange="medidas()">
-                    </div>
-
-                    <div class="margenes">
-                        <h2>5. Interlineado</h2>
-                        <input type="number" value="12" id="interlineado" onchange="medidas()">
-                    </div>
-                </form>
-
-                <div class="final">
-                    <img src="img/info.png">
-                    <p>Cómo mostrar la cuadrícula base</p>
-                    <br><br>
-                    <img src="img/info.png">
-                    <p>Cómo ajustar el documento</p>
-
-                    <input type="button" value="LISTO" onclick="medidas()" id="Listobtn">
                 </div>
 
+                <div class="Pag2" id="Pag2">
+                    <h1>Página 2</h1>
+                    <hr>
+
+                    
+
+
+                    <input type="button" name="Volver" value="VOLVER" onclick="page21()">
+
+
+                </div>
             </div>
         </div>
 

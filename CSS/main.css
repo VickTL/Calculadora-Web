@@ -13,6 +13,37 @@
 /* Tw Cen MT Condensed Extra Bold, 150 pt
 */
 
+
+@font-face {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT'), url('fonts/Tw Cen MT.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Tw Cen MT Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed'), url('fonts/TCCM____.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Tw Cen MT Condensed Extra Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed Extra Bold'), url('fonts/TCCEB.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Tw Cen MT Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
+}
+
 .form  {
     overflow: auto;
 }
@@ -203,6 +234,14 @@
 .final input[type=button]:active {
     background-color: #ff3366;
     color: white;
+}
+
+.Pag2 {
+    display: none;
+}
+
+.Pag1 {
+    display: block;
 }
 
 .split {

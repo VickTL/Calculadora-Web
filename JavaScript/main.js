@@ -36,13 +36,14 @@ function mmtopt(alturaCustom) {
 function calcLineasActuales() {
     var lineasActual = 0;
     var medidaMargenes = 0;
+
     document.interlineado = document.getElementById("interlineado").value;
     document.filas = document.getElementById("divisiones").value;
 
     medidaMargenes = document.altura-(2*document.margenes);
     lineasActual = medidaMargenes/document.interlineado;
 
-    //console.log(lineasActual);
+    console.log(lineasActual);
     return lineasActual;
 }
 
@@ -70,7 +71,7 @@ function calcLineasIdeales(masMenos, lineasActual, filas) {
 
 function showHide1() {
     var x = document.getElementById("VHdiv");
-    var y = document.getElementById("Customdiv")
+    var y = document.getElementById("Customdiv");
 
     if (x.style.display === "none") {
     x.style.display = "block";
@@ -80,13 +81,29 @@ function showHide1() {
 
 function showHide2() {
     var x = document.getElementById("VHdiv");
-    var y = document.getElementById("Customdiv")
+    var y = document.getElementById("Customdiv");
 
     document.getElementById("Hbtn").checked = false;
     document.getElementById("Vbtn").checked = false;
 
     x.style.display = "none";
     y.style.display = "block";
+}
+
+function page12() {
+    var x = document.getElementById("Pag2");
+    var y = document.getElementById("Pag1");
+
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+function page21() {
+    var y = document.getElementById("Pag2");
+    var x = document.getElementById("Pag1");
+
+    x.style.display = "block";
+    y.style.display = "none";
 }
 
 function medidas() {
@@ -130,9 +147,11 @@ function medidas() {
             rectangulo();
         }
     } else if (document.getElementById("Othbtn").checked) {
-        document.altura = document.getElementById("CustomV").value;
-        document.anchura = document.getElementById("CustomH").value;
-        rectangulo();
+        if (document.getElementById("CustomV").value>0 && document.getElementById("CustomH").value>0) {
+            document.altura = document.getElementById("CustomV").value;
+            document.anchura = document.getElementById("CustomH").value;
+            rectangulo();
+        }
     }
 
     //console.log("Altura: "+document.altura);
@@ -151,6 +170,7 @@ function switchValues() {
 }
 
 function rectangulo() {
+
     while(document.anchura>0.8*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura>0.8*pxtopt(document.getElementById("mediapantalla").clientHeight)){
         document.anchura=document.anchura*0.99;
         document.altura=document.altura*0.99;
