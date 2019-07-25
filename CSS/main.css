@@ -345,6 +345,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     display: flex;
     justify-content: space-between;
     box-sizing: content-box;
+    flex-wrap: wrap;
 }
 
 .OutMargenes {
