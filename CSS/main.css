@@ -104,7 +104,7 @@
     width: 0;
 }
 
-.btnForm1 input:checked {
+.btnForm1 input:checked + span {
     background-color: #ff3366;
     color: white;
 }
@@ -113,7 +113,7 @@
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+
 }
 
 .btnForm2 input {
@@ -123,10 +123,11 @@
     margin: 2%;
     height: 64px;
     box-sizing: border-box;
-
+    flex-grow: 1;
 
     font-family: "Tw Cen MT";
     font-size: 21pt;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -211,7 +212,6 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 
 .left {
@@ -254,25 +254,113 @@ p {
 
 hr {
     width: 100%;
-    background-color: #ff3366;
-    height: 1pt;
+    border: 1.5pt solid #ff3366;
 }
 
 .right {
   right: 0;
   background-color: #CCCCCC;
   border-left: 2pt solid rgb(153,153,153);
-  align-items: center;
-  align-content: center;
 
 }
 
+.mediapantalla {
+    width: 100%;
+    height: 100%;
+}
 
 .canvas {
-    display: block;
+    display:block;
     width: 0;
     height: 0;
-    margin: 10%;
+    opacity: 0;
+    border: 2pt solid rgb(153,153,153);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
     background-color: white;
+}
+
+.margins {
+    display: flex;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border: 2pt solid rgb(153,153,153);
+
+    background-color: rgba(0,0,0,0);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lineaEstructura {
+    border: 1.5pt solid #ff3366;
+    height: 0;
+    width: 100%;
+    box-sizing: content-box;
+    opacity: 0;
+}
+
+.margins3 {
+    display: flex;
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.lineaEstructuraV {
+    border: 1.5pt solid #ff3366;
+    box-sizing: content-box;
+
+    width: 0;
+    opacity: 0;
+
+}
+
+.margins2 {
+    display: auto;
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+}
+
+.renglon {
+    border: 1px solid black;
+    width: auto;
+    height: 0;
+    margin-bottom: -2px;
+    opacity: 0;
+}
+
+.separacion {
+    width: auto;
+    opacity: 0;
+    height: 0;
+    box-sizing: content-box;
 }

@@ -13,7 +13,6 @@
     </head>
     <body>
 
-
         <div class="split left">
             <div class="texto">
 
@@ -33,18 +32,18 @@
                     <h2>1. Formato</h2>
 
                     <div class="btnForm">
-                        <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()"><span>A5</span></label>
-                        <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()"><span>A4</span></label>
-                        <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()"><span>A3</span></label>
-                        <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()"><span>1080p</span></label>
+                        <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()" onfocus="medidas()"><span>A5</span></label>
+                        <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()" onfocus="medidas()"><span>A4</span></label>
+                        <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()" onfocus="medidas()"><span>A3</span></label>
+                        <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()" onfocus="medidas()"><span>1080p</span></label>
                         <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2()" id="Othbtn"><span>+</span></label>                    </div>
 
                     <div class="VH" id="VHdiv">
                         <h2>2. Orientación</h2>
 
                         <div class="btnForm1">
-                            <label class="Vbtn"><input type="radio" name="toggle2" id="Vbtn"><span>Vertical</span></label>
-                            <label class="Hbtn"><input type="radio" name="toggle2" id="Hbtn"><span>Horizontal</span></label>
+                            <label class="Vbtn"><input type="radio" name="toggle2" id="Vbtn" onclick="medidas()"><span>Vertical</span></label>
+                            <label class="Hbtn"><input type="radio" name="toggle2" id="Hbtn" onclick="medidas()"><span>Horizontal</span></label>
                         </div>
                     </div>
 
@@ -60,17 +59,17 @@
 
                     <div class="margenes">
                         <h2>3. Medida de márgenes</h2>
-                        <input type="number" value="36">
+                        <input type="number" value="36" id="margenes" onchange="medidas()">
                     </div>
 
                     <div class="margenes">
                         <h2>4. Divisiones de la estructura</h2>
-                        <input type="number" value="4">
+                        <input type="number" value="4" id="divisiones" onchange="medidas()">
                     </div>
 
                     <div class="margenes">
                         <h2>5. Interlineado</h2>
-                        <input type="number" value="12">
+                        <input type="number" value="12" id="interlineado" onchange="medidas()">
                     </div>
                 </form>
 
@@ -91,6 +90,8 @@
 
         <div class="split right">
 
+            <div class="mediapantalla" id="mediapantalla"></div>
+
             <!-- Aquí iría un rectangulo centrado con el siguiente comportamiento:
                 Medida horizontal: la establecida por el usuario
                 Medida vertical: la establecida por el usuario
@@ -109,6 +110,12 @@
             -->
 
             <div class="canvas" id="canvas">
+                <div class="margins" id="margins">
+                </div>
+                <div class="margins3" id="margins3">
+                </div>
+                <div class="margins2" id="margins2">
+                </div>
             </div>
 
         </div>
