@@ -376,6 +376,12 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .left {
+    background-color: red;
+  }
+}
+
 .split {
   height: 100%;
   width: 50%;
