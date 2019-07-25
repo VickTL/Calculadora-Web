@@ -13,8 +13,8 @@
     </head>
     <body>
 
-        <div class="split left">
-            <div class="texto">
+        <div class="split left" id= "splitLeft">
+            <div class="texto" id="texto">
                 <div class="Pag1" id="Pag1">
                     <h1>Bienvenido</h1>
 
@@ -74,11 +74,13 @@
                     </form>
 
                     <div class="final">
-                        <img src="img/info.png">
-                        <p>Cómo mostrar la cuadrícula base</p>
-                        <br><br>
-                        <img src="img/info.png">
-                        <p>Cómo ajustar el documento</p>
+                        <div class="info">
+                            <img src="img/info.png">
+                            <p>Cómo mostrar la cuadrícula base</p>
+                            <br><br>
+                            <img src="img/info.png">
+                            <p>Cómo ajustar el documento</p>
+                        </div>
 
                         <input type="button" value="LISTO" onclick="page12()" id="Listobtn">
                     </div>
@@ -155,10 +157,7 @@
             </div>
         </div>
 
-
-
-        <div class="split right">
-
+        <div class="split right" id="splitRight">
             <div class="mediapantalla" id="mediapantalla"></div>
 
             <!-- Aquí iría un rectangulo centrado con el siguiente comportamiento:
@@ -186,8 +185,19 @@
                 <div class="margins2" id="margins2">
                 </div>
             </div>
-
         </div>
+    </div>
+
+    <script type="text/javascript">
+        if(window.innerWidth<700) {
+            document.getElementById("splitRight").style.display = "none";
+            document.getElementById("splitLeft").style.width = "100%";
+            document.getElementById("texto").style.top = "0";
+            document.getElementById("texto").style.transform = "translate(0, 0)";
+            document.getElementById("texto").style.position = "relative";
+            
+        }
+    </script>
 
     </body>
 </html>

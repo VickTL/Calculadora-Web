@@ -23,6 +23,7 @@ const hdver = 1440;
 //Si elige una altura custom, tendrá que seleccionar las unidades entre pt, px y mm
 //En el caso de ser otra que no sean puntos convertir con pxtopt o mmtopt
 
+console.log(window.innerWidth);
 
 function pxtopt(alturaCustom) {
     return alturaCustom*0.75;
@@ -190,79 +191,79 @@ function switchValues() {
 }
 
 function rectangulo() {
+    if(document.getElementById("splitRight").style.display != "none") {
+        while(document.anchura>0.8*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura>0.8*pxtopt(document.getElementById("mediapantalla").clientHeight)){
+            document.anchura=document.anchura*0.99;
+            document.altura=document.altura*0.99;
 
-    while(document.anchura>0.8*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura>0.8*pxtopt(document.getElementById("mediapantalla").clientHeight)){
-        document.anchura=document.anchura*0.99;
-        document.altura=document.altura*0.99;
+            document.margenes=document.margenes*0.99;
 
-        document.margenes=document.margenes*0.99;
-
-        //console.log("Altura: "+document.altura+", Anchura: "+document.anchura+", Margenes: "+document.margenes);
-    }
+            //console.log("Altura: "+document.altura+", Anchura: "+document.anchura+", Margenes: "+document.margenes);
+        }
 
 
-    var x = document.getElementById("canvas");
+        var x = document.getElementById("canvas");
 
-    x.style.width = document.anchura+"pt";
-    x.style.height = document.altura+"pt";
-    x.style.opacity = 100;
+        x.style.width = document.anchura+"pt";
+        x.style.height = document.altura+"pt";
+        x.style.opacity = 100;
 
-    var y = document.getElementById("margins");
+        var y = document.getElementById("margins");
 
-    y.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
-    y.style.height = (document.altura-document.margenes-document.margenes)+"pt";
-    y.style.opacity = 100;
+        y.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
+        y.style.height = (document.altura-document.margenes-document.margenes)+"pt";
+        y.style.opacity = 100;
 
-    var z = document.getElementById("margins2");
+        var z = document.getElementById("margins2");
 
-    z.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
-    z.style.height = (document.altura-document.margenes-document.margenes)+"pt";
-    z.style.opacity = 100;
+        z.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
+        z.style.height = (document.altura-document.margenes-document.margenes)+"pt";
+        z.style.opacity = 100;
 
-    var z2 = document.getElementById("margins3");
+        var z2 = document.getElementById("margins3");
 
-    z2.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
-    z2.style.height = (document.altura-document.margenes-document.margenes)+"pt";
-    z2.style.opacity = 100;
+        z2.style.width = (document.anchura-document.margenes-document.margenes)+"pt";
+        z2.style.height = (document.altura-document.margenes-document.margenes)+"pt";
+        z2.style.opacity = 100;
 
-    clearBox("margins");
-    clearBox("margins3");
+        clearBox("margins");
+        clearBox("margins3");
 
-    var divs = parseInt(document.getElementById("divisiones").value);
-    for(var i=0; i<divs+1; i++) {
-        var linea = document.createElement("div");
-        linea.setAttribute("class","lineaEstructura");
-        linea.style.opacity = 100;
-        var margins = document.getElementById("margins");
-        margins.appendChild(linea);
+        var divs = parseInt(document.getElementById("divisiones").value);
+        for(var i=0; i<divs+1; i++) {
+            var linea = document.createElement("div");
+            linea.setAttribute("class","lineaEstructura");
+            linea.style.opacity = 100;
+            var margins = document.getElementById("margins");
+            margins.appendChild(linea);
 
-        var linea = document.createElement("div");
-        linea.setAttribute("class","lineaEstructuraV");
-        linea.style.opacity = 100;
-        var margins3 = document.getElementById("margins3");
-        margins3.appendChild(linea);
-    }
+            var linea = document.createElement("div");
+            linea.setAttribute("class","lineaEstructuraV");
+            linea.style.opacity = 100;
+            var margins3 = document.getElementById("margins3");
+            margins3.appendChild(linea);
+        }
 
-    clearBox("margins2");
+        clearBox("margins2");
 
-    var renglones = parseInt(Math.floor(calcLineasActuales()))+1;
-    //console.log("Aparecen: "+ renglones);
+        var renglones = parseInt(Math.floor(calcLineasActuales()))+1;
+        //console.log("Aparecen: "+ renglones);
 
-    for(var i2=0; i2<renglones; i2++) {
+        for(var i2=0; i2<renglones; i2++) {
 
-        var renglon = document.createElement("div");
-        renglon.setAttribute("class","renglon");
-        renglon.style.opacity = 100;
-        var margins2 = document.getElementById("margins2");
-        margins2.appendChild(renglon);
+            var renglon = document.createElement("div");
+            renglon.setAttribute("class","renglon");
+            renglon.style.opacity = 100;
+            var margins2 = document.getElementById("margins2");
+            margins2.appendChild(renglon);
 
-        var separacion = document.createElement("div");
-        separacion.setAttribute("class","separacion");
-        separacion.style.height = document.getElementById("interlineado").value+"pt";
-        var margins2 = document.getElementById("margins2");
-        margins2.appendChild(separacion);
-
-        //console.log(i2);
+            var separacion = document.createElement("div");
+            separacion.setAttribute("class","separacion");
+            separacion.style.height = document.getElementById("interlineado").value+"pt";
+            var margins2 = document.getElementById("margins2");
+            margins2.appendChild(separacion);
+            //console.log(i2);
+        }
     }
 
     document.recCreado = true;
