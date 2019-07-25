@@ -89,6 +89,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     background-color: #ff3366;
     color: white;
 }
+
 .VH {
     display: block;
 }
@@ -240,6 +241,137 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     display: none;
 }
 
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contenido input[name="Volver"] {
+    height: 75px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2pt solid #ff3366;
+    margin-left: 4%;
+    margin-right: 4%;
+    flex-grow: 1;
+    padding: 0;
+
+    color : #ff3366;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.resultado {
+    margin-bottom: 25%;
+}
+
+.botonesMasMenos {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonesMasMenos input[type=button] {
+    height: 75px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1pt solid #D0D0D0;
+    margin: 2%;
+    flex-grow: 1;
+
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.Pag2 h2{
+    display: block;
+    margin:0%;
+    text-align: center;
+}
+
+.Pag2 h1 {
+    display:block;
+    margin:0%;
+    text-align: center;
+}
+
+.Pag3 {
+    display: none;
+}
+
+.Pag3 h1 {
+    margin: 0%;
+}
+
+.Pag3 h2 {
+    margin-bottom: 0%;
+}
+
+.Pag3 h3 {
+    margin-bottom: 0%;
+}
+
+.Pag3 hr {
+    width: 100%;
+}
+
+.hr2 {
+    width: 100%;
+    flex-grow: 0;
+    border: 0.5pt solid black;
+}
+
+.Outputs {
+    margin: 2%;
+}
+
+.Out {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
+}
+
+.OutMargenes {
+    margin-top: 26.56px;
+}
+
+.OutMargenes div[class="Out"] {
+    margin-left: 5%;
+}
+
+.botonesVolver {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonesVolver input[type=button] {
+    height: 75px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2pt solid #ff3366;
+    margin: 2%;
+    flex-grow: 1;
+
+    color : #ff3366;
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+.Creditos {
+    margin-top: 2%;
+}
+
 .Pag1 {
     display: block;
 }
@@ -285,6 +417,14 @@ h2 {
     display: inline;
 }
 
+h3 {
+    font-family: "Tw Cen MT";
+    font-size : 24pt;
+    font-weight: bold;
+    display: inline;
+    color: #ff3366;
+}
+
 p {
     font-family: "Tw Cen MT";
     font-size : 18pt;
@@ -292,7 +432,7 @@ p {
 }
 
 hr {
-    width: 100%;
+    width: auto;
     border: 1.5pt solid #ff3366;
 }
 

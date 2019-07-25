@@ -3,8 +3,7 @@
  var anchura = 0;
  var margenes = 0;
  var interlineado = 0;
- var filas = 0;
- var masMenos = false;
+ var recCreado = false;
 
 
 // Medidas estandar en puntos
@@ -44,29 +43,30 @@ function calcLineasActuales() {
     lineasActual = medidaMargenes/document.interlineado;
 
     console.log(lineasActual);
+
     return lineasActual;
 }
 
-function calcLineasIdeales(masMenos, lineasActual, filas) {
-    masMenos = masMenos; filas = filas;
-    var lineasIdeal = Math.floor(lineasActual);
+function menos() {
+    var lineasIdeal = Math.floor(calcLineasActuales());
 
     // Esta funcion suma o resta lineas a las actuales hasta que de un numero entero divisible por el numero
     // de divisiones de la estructura (filas), es decir, hasta que al dividirlo el resto de 0.
+    do{
+        lineasIdeal = lineasIdeal - 1;
+    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)-1))%parseInt(document.getElementById("divisiones").value) != 0);
 
-    if(masMenos == true) { // Mas filas
-        do{
-            lineasIdeal = lineasIdeal + 1;
-        } while((lineasIdeal-(filas-1))%filas != 0);
-    }
-
-    else if(masMenos == false) { // Menos filas
-        do{
-            lineasIdeal = lineasIdeal - 1;
-        } while((lineasIdeal-(filas-1))%filas != 0);
-    }
+    page23();
 
     return lineasIdeal;
+}
+
+function mas() {
+    var lineasIdeal = Math.floor(lineasActual);
+
+    do{
+        lineasIdeal = lineasIdeal + 1;
+    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)-1))%parseInt(document.getElementById("divisiones").value) != 0);
 }
 
 function showHide1() {
@@ -91,11 +91,19 @@ function showHide2() {
 }
 
 function page12() {
-    var x = document.getElementById("Pag2");
-    var y = document.getElementById("Pag1");
+    if (document.recCreado){
+        var x = document.getElementById("Pag2");
+        var y = document.getElementById("Pag1");
 
-    x.style.display = "block";
-    y.style.display = "none";
+        x.style.display = "block";
+        y.style.display = "none";
+
+        document.getElementById("numRenglones").innerHTML = calcLineasActuales().toFixed(2);
+    }
+
+    else {
+        alert("No se han rellenado todos los parámetros.")
+    }
 }
 
 function page21() {
@@ -104,6 +112,18 @@ function page21() {
 
     x.style.display = "block";
     y.style.display = "none";
+}
+
+function page23() {
+    var x = document.getElementById("Pag3");
+    var y = document.getElementById("Pag2");
+
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+function page31() {
+    location.reload();
 }
 
 function medidas() {
@@ -244,6 +264,8 @@ function rectangulo() {
 
         //console.log(i2);
     }
+
+    document.recCreado = true;
 }
 
 function clearBox(elementID) {
