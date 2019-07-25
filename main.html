@@ -32,11 +32,11 @@
                         <h2>1. Formato</h2>
 
                         <div class="btnForm">
-                            <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1()" onfocus="medidas()"><span>A5</span></label>
-                            <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1()" onfocus="medidas()"><span>A4</span></label>
-                            <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1()" onfocus="medidas()"><span>A3</span></label>
-                            <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1()" onfocus="medidas()"><span>1080p</span></label>
-                            <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2()" id="Othbtn"><span>+</span></label>                    </div>
+                            <label class="A5btn"><input type="radio" name="toggle" id="A5btn" onclick="showHide1(); medidas();"><span>A5</span></label>
+                            <label class="A4btn"><input type="radio" name="toggle" id="A4btn" onclick="showHide1(); medidas();"><span>A4</span></label>
+                            <label class="A3btn"><input type="radio" name="toggle" id="A3btn" onclick="showHide1(); medidas();"><span>A3</span></label>
+                            <label class="HDbtn"><input type="radio" name="toggle" id="HDbtn" onclick="showHide1(); medidas();"><span>1080p</span></label>
+                            <label class="Otherbtn"><input type="radio" name="toggle" onclick="showHide2(); medidas();" id="Othbtn"><span>+</span></label>                    </div>
 
                         <div class="VH" id="VHdiv">
                             <h2>2. Orientación</h2>
@@ -52,7 +52,7 @@
 
                             <div class="btnForm2">
                                 <input type="number" placeholder="Vertical" id="CustomV" onchange="medidas()" step="any" min="0">
-                                <button type="button" name="button" onclick="switchValues()"><span style="color: #ff3366;"><i class="fas fa-exchange-alt fa-2x"></span></i></button>
+                                <button type="button" name="button" onclick="switchValues(); medidas();"><span style="color: #ff3366;"><i class="fas fa-exchange-alt fa-2x"></span></i></button>
                                 <input type="number" placeholder="Horizontal" id="CustomH" onchange="medidas()" step="any" min="0">
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                             <h1 id="numRenglones">Página 2</h1>
                             <h2>renglones</h2>
                         </div>
-
+                        
                         <h2>¿Cómo quieres ajustar el documento?</h2>
 
                         <div class="botonesMasMenos">
@@ -111,23 +111,23 @@
                         <hr>
                         <div class="Outputs">
                             <div class="Out">
-                                <h2>Altura</h2>
-                                <h2>null</h2>
+                                <h2>Dimensiones</h2>
+                                <h2 id="OutDimensiones">null</h2>
                             </div>
                             <hr class="hr2">
                             <div class="Out">
                                 <h2>Interlineado</h2>
-                                <h2>null</h2>
+                                <h2 id="OutInterlineado">null</h2>
                             </div>
                             <hr class="hr2">
                             <div class="Out">
                                 <h2>Divisiones</h2>
-                                <h2>null</h2>
+                                <h2 id="OutDivisiones">null</h2>
                             </div>
                             <hr class="hr2">
                             <div class="Out">
                                 <h3>Lineas ideales</h3>
-                                <h3>null</h3>
+                                <h3 id="OutIdeales">null</h3>
                             </div>
                             <hr class="hr2">
                             <div class="OutMargenes">
@@ -135,11 +135,11 @@
                                 <hr class="hr2">
                                 <div class="Out">
                                     <h2>Laterales</h2>
-                                    <h2>null</h2>
+                                    <h2 id="OutMargenes1">null</h2>
                                 </div>
                                 <div class="Out">
                                     <h3>Superior e inferior</h3>
-                                    <h3>null</h3>
+                                    <h3 id="OutMargenes2">null</h3>
                                 </div>
                             </div>
                         </div>
