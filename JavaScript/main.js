@@ -192,6 +192,7 @@ function switchValues() {
 
 function rectangulo() {
     if(document.getElementById("splitRight").style.display != "none") {
+        
         while(document.anchura>0.8*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura>0.8*pxtopt(document.getElementById("mediapantalla").clientHeight)){
             document.anchura=document.anchura*0.99;
             document.altura=document.altura*0.99;
