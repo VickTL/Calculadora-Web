@@ -537,18 +537,13 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 .left {
   left: 0;
   background-color: white;
-  overflow: hidden;
 }
 
 
 .texto {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
     text-align: justify;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 10%;
     max-width: 100%;
     overflow: hidden;
 }
