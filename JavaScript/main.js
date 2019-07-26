@@ -56,7 +56,7 @@ function menos() {
 
     do{
         lineasIdeal = lineasIdeal - 1;
-    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)-1))%parseInt(document.getElementById("divisiones").value) != 0);
+    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)-1)) % parseInt(document.getElementById("divisiones").value) != 0);
 
     document.lineasIdeal = lineasIdeal;
 
@@ -68,7 +68,7 @@ function mas() {
 
     do{
         lineasIdeal = lineasIdeal + 1;
-    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)+1))%parseInt(document.getElementById("divisiones").value) != 0);
+    } while((lineasIdeal-(parseInt(document.getElementById("divisiones").value)-1)) % parseInt(document.getElementById("divisiones").value) != 0);
 
     document.lineasIdeal = lineasIdeal;
 
@@ -106,7 +106,7 @@ function page12() {
 
         document.getElementById("numRenglones").innerHTML = calcLineasActuales().toFixed(2);
 
-        
+
     }
 
     else {
@@ -134,41 +134,68 @@ function page23() {
     document.getElementById("OutDivisiones").innerHTML = document.getElementById("divisiones").value+" x "+document.getElementById("divisiones").value;
     document.getElementById("OutIdeales").innerHTML = document.lineasIdeal;
     document.getElementById("OutMargenes1").innerHTML = document.getElementById("margenes").value+" pt";
-    document.getElementById("OutMargenes2").innerHTML = (document.altura-document.interlineado*document.lineasIdeal).toFixed(3)+" pt";
+    document.getElementById("OutMargenes2").innerHTML = ((document.altura-document.interlineado*document.lineasIdeal)/2).toFixed(3)+" pt";
 
 
     var y = document.getElementById("margins");
 
-    y.style.height = (document.altura-2*parseInt(document.getElementById("OutMargenes2").innerHTML))+"pt";
+    y.style.height = (document.altura-2*(document.altura-document.interlineado*document.lineasIdeal)/2)+"pt";
     y.style.opacity = 100;
 
     var z = document.getElementById("margins2");
 
-    z.style.height = (document.altura-2*parseInt(document.getElementById("OutMargenes2").innerHTML))+"pt";
+    z.style.height = (document.altura-2*(document.altura-document.interlineado*document.lineasIdeal)/2)+"pt";
     z.style.opacity = 100;
 
     var z2 = document.getElementById("margins3");
 
-    z2.style.height = (document.altura-2*parseInt(document.getElementById("OutMargenes2").innerHTML))+"pt";
+    z2.style.height = (document.altura-2*(document.altura-document.interlineado*document.lineasIdeal)/2)+"pt";
     z2.style.opacity = 100;
 
     clearBox("margins");
     clearBox("margins3");
 
-    var divs = parseInt(document.getElementById("OutDivisiones").innerHTML);
-    for(var i=0; i<divs+1; i++) {
+    var divs = document.getElementById("divisiones").value;
+
+    var linea = document.createElement("div");
+    linea.setAttribute("class","lineaEstructura");
+    linea.style.opacity = 100;
+    var margins = document.getElementById("margins");
+    margins.appendChild(linea);
+
+    var linea = document.createElement("div");
+    linea.setAttribute("class","lineaEstructuraV");
+    linea.style.opacity = 100;
+    var margins3 = document.getElementById("margins3");
+    margins3.appendChild(linea);
+
+    for(var i=0; i<divs-1; i++) {
         var linea = document.createElement("div");
         linea.setAttribute("class","lineaEstructura");
         linea.style.opacity = 100;
+        linea.style.height = document.interlineado+"pt";
         var margins = document.getElementById("margins");
         margins.appendChild(linea);
 
         var linea = document.createElement("div");
         linea.setAttribute("class","lineaEstructuraV");
         linea.style.opacity = 100;
+        linea.style.width = document.interlineado+"pt";
         var margins3 = document.getElementById("margins3");
         margins3.appendChild(linea);
     }
+
+    var linea = document.createElement("div");
+    linea.setAttribute("class","lineaEstructura");
+    linea.style.opacity = 100;
+    var margins = document.getElementById("margins");
+    margins.appendChild(linea);
+
+    var linea = document.createElement("div");
+    linea.setAttribute("class","lineaEstructuraV");
+    linea.style.opacity = 100;
+    var margins3 = document.getElementById("margins3");
+    margins3.appendChild(linea);
 
     clearBox("margins2");
 
@@ -339,19 +366,46 @@ function rectangulo() {
         clearBox("margins3");
 
         var divs = parseInt(document.getElementById("divisiones").value);
-        for(var i=0; i<divs+1; i++) {
+
+        var linea = document.createElement("div");
+        linea.setAttribute("class","lineaEstructura");
+        linea.style.opacity = 100;
+        var margins = document.getElementById("margins");
+        margins.appendChild(linea);
+
+        var linea = document.createElement("div");
+        linea.setAttribute("class","lineaEstructuraV");
+        linea.style.opacity = 100;
+        var margins3 = document.getElementById("margins3");
+        margins3.appendChild(linea);
+
+        for(var i=0; i<divs-1; i++) {
             var linea = document.createElement("div");
             linea.setAttribute("class","lineaEstructura");
             linea.style.opacity = 100;
+            linea.style.height = document.interlineado+"pt";
             var margins = document.getElementById("margins");
             margins.appendChild(linea);
 
             var linea = document.createElement("div");
             linea.setAttribute("class","lineaEstructuraV");
             linea.style.opacity = 100;
+            linea.style.width = document.interlineado+"pt";
             var margins3 = document.getElementById("margins3");
             margins3.appendChild(linea);
         }
+
+        var linea = document.createElement("div");
+        linea.setAttribute("class","lineaEstructura");
+        linea.style.opacity = 100;
+        var margins = document.getElementById("margins");
+        margins.appendChild(linea);
+
+        var linea = document.createElement("div");
+        linea.setAttribute("class","lineaEstructuraV");
+        linea.style.opacity = 100;
+        var margins3 = document.getElementById("margins3");
+        margins3.appendChild(linea);
 
         clearBox("margins2");
 
