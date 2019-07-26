@@ -27,7 +27,9 @@ const hdver = 1440;
 //Si elige una altura custom, tendrá que seleccionar las unidades entre pt, px y mm
 //En el caso de ser otra que no sean puntos convertir con pxtopt o mmtopt
 
-console.log(window.innerWidth);
+location.reload(true);
+
+//console.log(window.innerWidth);
 
 function pxtopt(alturaCustom) {
     return alturaCustom*0.75;
