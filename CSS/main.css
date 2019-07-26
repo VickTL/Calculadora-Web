@@ -420,7 +420,7 @@ h1 {
     font-size : 6em;
     font-weight: normal;
     display: inline;
-
+    text-align: left;
 }
 
 h2 {
