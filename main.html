@@ -11,7 +11,7 @@
         <title>Calculadora de Márgenes</title>
 
     </head>
-    <body>
+    <body id="body">
 
         <div class="split left" id= "splitLeft">
             <div class="texto" id="texto">
@@ -75,10 +75,10 @@
 
                     <div class="final">
                         <div class="info">
-                            <img src="img/info.png">
+                            <img src="img/info.png" id="icon1">
                             <p>Cómo mostrar la cuadrícula base</p>
                             <br><br>
-                            <img src="img/info.png">
+                            <img src="img/info.png" id="icon2">
                             <p>Cómo ajustar el documento</p>
                         </div>
 
@@ -88,20 +88,22 @@
 
                 <div class="Pag2" id="Pag2">
                     <div class="contenido">
-                        <div class="resultado">
+                        <div class="resultado" id="resultado">
                             <h2>Ahora mismo tienes</h2>
                             <h1 id="numRenglones">Página 2</h1>
                             <h2>renglones</h2>
                         </div>
-                        
+
                         <h2>¿Cómo quieres ajustar el documento?</h2>
 
                         <div class="botonesMasMenos">
                             <input type="button" name="" value="Más renglones" onclick="mas()">
                             <input type="button" name="" value="Menos renglones" onclick="menos()">
                         </div>
+                        <div class="divVolver1">
+                            <input type="button" name="Volver" value="VOLVER" onclick="page21()">
+                        </div>
 
-                        <input type="button" name="Volver" value="VOLVER" onclick="page21()">
                     </div>
                 </div>
 
@@ -195,6 +197,8 @@
             document.getElementById("texto").style.top = "0";
             document.getElementById("texto").style.transform = "translate(0, 0)";
             document.getElementById("texto").style.position = "relative";
+            document.getElementById("body").style.fontSize = "50%";
+            document.getElementById("texto").style.marginTop = "25%";
         }
     </script>
 

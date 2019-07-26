@@ -50,7 +50,8 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .btnForm {
     width: 100%;
-    height: 100px;
+    height: 7em;
+
     display: flex;
     /* border: 1px solid black; */
 }
@@ -58,13 +59,13 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 .btnForm label {
     float:left;
     margin: 2%;
-    max-height: 64px;
-    box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
     background-color: white;
     border:1px solid #D0D0D0;
     overflow: hidden;
+    line-height: 4em;
+
 }
 
 .btnForm label span {
@@ -74,7 +75,6 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     font-weight: bold;
     display: block;
     text-align: center;
-    padding: 13px 0;
 }
 
 .btnForm label input {
@@ -92,15 +92,17 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .VH {
     display: block;
+    width: 100%;
 }
 
 .Custom {
     display: none;
+    width: 100%;
 }
 
 .btnForm1 {
     width: 100%;
-    height: 100px;
+    height: 7em;
     /* border: 1px solid black; */
 
     display: flex;
@@ -111,7 +113,6 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     margin: 2%;
     /*max-width: 45.7%;*/
     width: 100%;
-    height: 64px;
     border-radius: 15px;
     background-color: white;
     border:1px solid #D0D0D0;
@@ -119,13 +120,13 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .btnForm1 label span {
+    padding: 0.5em 0;
     color: black;
     font-family: "Tw Cen MT";
     font-size : 2em;
     font-weight: bold;
     display: block;
     text-align: center;
-    padding: 13px 0;
 }
 
 .btnForm1 label input {
@@ -143,19 +144,19 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .btnForm2 {
     width: 100%;
-    height: 100px;
+    height: 7em;
     display: flex;
+    justify-content: space-between;
 
 }
 
 .btnForm2 input {
-    padding: 13px 0;
+    padding: 0;
     border: 1px solid #D0D0D0;
     border-radius: 15px;
     margin: 2%;
-    height: 64px;
-    box-sizing: border-box;
     flex-grow: 1;
+
 
     font-family: "Tw Cen MT";
     font-size : 1.8em;
@@ -164,18 +165,16 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .btnForm2 button {
-    height: 61px;
-    width: 61px;
+    width: 64px;
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
     margin: 2%;
-
-    flex-basis: auto;
 }
 
 .margenes {
     width: 100%;
+    height: 7em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -183,13 +182,11 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .margenes input[type=number] {
-    padding: 13px;
     border:1px solid #D0D0D0;
     border-radius: 15px;
     float: right;
     width: 90px;
-    height: 34px;
-    margin-right: 2%;
+    margin: 2%;
 
     color : black;
     font-family: "Tw Cen MT";
@@ -201,7 +198,8 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 
 .final {
-    overflow: auto;
+    overflow: visible;
+    height: 7em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -212,24 +210,24 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .final img {
-    width: 20pt;
-    height: 20pt;
+    width: 1.2em;
+    height: 1.2em;
     float: left;
     margin-right: 5pt;
 }
 
 .info {
     margin: 2%;
+    margin-right: 10%;
 }
 
 .final input[type=button] {
-    float: right;
-    height: 75px;
-    width: 300px;
+    padding: 0;
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
-    margin-right: 2%;
+    margin: 2%;
+    flex-grow: 1;
 
     color : #ff3366;
     font-family: "Tw Cen MT";
@@ -254,15 +252,19 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     flex-direction: column;
 }
 
-.contenido input[name="Volver"] {
-    height: 75px;
+.divVolver1 {
+    display: flex;
+    height: 7em;
+    justify-content: space-between;
+}
+
+.divVolver1 input[name="Volver"] {
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
-    margin-left: 4%;
-    margin-right: 4%;
     flex-grow: 1;
     padding: 0;
+    margin: 2%;
 
     color : #ff3366;
     font-family: "Tw Cen MT";
@@ -277,13 +279,12 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .botonesMasMenos {
-    margin: 2%;
     display: flex;
+    height: 7em;
     justify-content: space-between;
 }
 
 .botonesMasMenos input[type=button] {
-    height: 75px;
     border-radius: 15px;
     background-color: white;
     border: 1pt solid #D0D0D0;
@@ -358,11 +359,11 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .botonesVolver {
     display: flex;
+    height: 7em;
     justify-content: space-between;
 }
 
 .botonesVolver input[type=button] {
-    height: 75px;
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
@@ -417,6 +418,7 @@ h1 {
     font-size : 6em;
     font-weight: normal;
     display: inline;
+
 }
 
 h2 {
