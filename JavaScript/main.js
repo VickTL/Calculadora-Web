@@ -250,6 +250,8 @@ function medidas() {
     document.margenes = document.getElementById("margenes").value;
     document.interlineado = document.getElementById("interlineado").value;
 
+
+
     if(document.getElementById("Vbtn").checked) {
         if (document.getElementById("A5btn").checked) {
             document.altura = a5ver;
@@ -327,6 +329,12 @@ function medidas() {
 }
 
 function rectangulo() {
+    if(document.altura-2*document.margenes<=0) {
+        alert("Los márgenes son demasiado grandes o la altura del documento demasiado pequeña!");
+    } else if(document.interlineado>document.altura-2*document.margenes) {
+        alert("Tu interlineado es demasiado grande, no tienes ningún renglon.");
+    } else
+
     if(document.getElementById("splitRight").style.display != "none") {
         while(document.anchura>0.8*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura>0.8*pxtopt(document.getElementById("mediapantalla").clientHeight)){
             document.anchura=document.anchura*0.99;
