@@ -230,7 +230,7 @@ function page32() {
 }
 
 function page31() {
-    location.reload();
+    location.reload(true);
 }
 
 
