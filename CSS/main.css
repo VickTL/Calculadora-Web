@@ -240,12 +240,12 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .info {
     margin: 2%;
-    margin-right: 10%;
 }
 
 .final input[type=button] {
     padding: 0;
     border-radius: 15px;
+    max-width: 30%;
     background-color: white;
     border: 2pt solid #ff3366;
     margin: 2%;
