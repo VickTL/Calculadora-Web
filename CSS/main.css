@@ -156,6 +156,8 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     border-radius: 15px;
     margin: 2%;
     flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0.1px;
 
 
     font-family: "Tw Cen MT";
@@ -165,11 +167,13 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .btnForm2 button {
-    width: 64px;
+    min-width: 12%;
     border-radius: 15px;
     background-color: white;
     border: 2pt solid #ff3366;
     margin: 2%;
+    overflow: hidden;
+    flex-basis: auto;
 }
 
 .margenes {
