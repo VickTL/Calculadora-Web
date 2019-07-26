@@ -331,8 +331,12 @@ function medidas() {
 function rectangulo() {
     if(document.altura-2*document.margenes<=0) {
         alert("Los márgenes son demasiado grandes o la altura del documento demasiado pequeña!");
+
     } else if(document.interlineado>document.altura-2*document.margenes) {
         alert("Tu interlineado es demasiado grande, no tienes ningún renglon.");
+
+    } else if(((document.altura-2*document.margenes)-(parseInt(document.getElementById("divisiones").value)-1)*document.interlineado)/parseInt(document.getElementById("divisiones").value)<document.interlineado) {
+        alert("Tus divisiones de la estructura son demasiadas para lo grande que es tu interlineado.")
     } else
 
     if(document.getElementById("splitRight").style.display != "none") {
@@ -342,6 +346,14 @@ function rectangulo() {
 
             document.margenes=document.margenes*0.99;
             document.interlineado=document.interlineado*0.99;
+        }
+
+        while(document.anchura<0.4*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura<0.4*pxtopt(document.getElementById("mediapantalla").clientHeight)){
+            document.anchura=document.anchura*1.01;
+            document.altura=document.altura*1.01;
+
+            document.margenes=document.margenes*1.01;
+            document.interlineado=document.interlineado*1.01;
         }
 
         console.log("Altura: "+document.altura+", Anchura: "+document.anchura+", Margenes: "+document.margenes+", Interlineado: "+document.interlineado);
