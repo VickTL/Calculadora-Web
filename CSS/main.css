@@ -85,6 +85,11 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     width: 0;
 }
 
+.btnForm label:hover {
+    border: 2pt solid #ff3366;
+    color: #ff3366;
+}
+
 .btnForm input:checked + span {
     background-color: #ff3366;
     color: white;
@@ -135,6 +140,11 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     cursor: pointer;
     height: 0;
     width: 0;
+}
+
+.btnForm1 label:hover {
+    border: 2pt solid #ff3366;
+    color: #ff3366;
 }
 
 .btnForm1 input:checked + span {
@@ -191,7 +201,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 }
 
 .margenes input[type=number] {
-    border:1px solid #D0D0D0;
+    border:1pt solid #D0D0D0;
     border-radius: 15px;
     float: right;
     width: 90px;
@@ -205,6 +215,9 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     text-align: center;
 }
 
+.margenes input[type=number]:hover {
+    border: 2pt solid #ff3366;
+}
 
 .final {
     overflow: visible;
@@ -246,6 +259,10 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     text-align: center;
 }
 
+.final input[type=button]:hover {
+    border: 4pt solid #ff3366;
+}
+
 .final input[type=button]:active {
     background-color: #ff3366;
     color: white;
@@ -283,6 +300,15 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     text-align: center;
 }
 
+.divVolver1 input[name="Volver"]:hover {
+    border: 4pt solid #ff3366;
+}
+
+.divVolver1 input[name="Volver"]:active {
+    background-color: #ff3366;
+    color: white;
+}
+
 .resultado {
     margin-bottom: 25%;
 }
@@ -307,6 +333,16 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     font-weight: bold;
     display: inline;
     text-align: center;
+}
+
+.botonesMasMenos input[type=button]:hover {
+    border: 2pt solid #ff3366;
+    color: #ff3366;
+}
+
+.botonesMasMenos input[type=button]:active {
+    background-color: #ff3366;
+    color: white;
 }
 
 .Pag2 h2{
@@ -389,8 +425,100 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     text-align: center;
 }
 
+.botonesVolver input:hover {
+    border: 4pt solid #ff3366;
+}
+
+.botonesVolver input:active {
+    background-color: #ff3366;
+    color: white;
+}
+
 .Creditos {
     margin-top: 2%;
+}
+
+.textbtn {
+    border: none;
+     background-color: inherit;
+     font-family: "Tw Cen MT";
+     font-size : 1.5em;
+     font-weight: normal;
+     cursor: pointer;
+     display: inline-block;
+}
+
+.textbtn:hover {
+    color: #ff3366;
+    font-weight: bold;
+}
+
+.info1 {
+    display: none;
+}
+
+.info2 {
+    display: none;
+}
+
+.info3 {
+    display: none;
+}
+
+.info3 h2 {
+    display: block;
+    text-align: center;
+}
+
+.info3 p {
+    display: block;
+    text-align: center;
+}
+
+.links {
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    padding: 0.5em 0;
+    border-radius: 15px;
+    background-color: white;
+    border: 1pt solid #D0D0D0;
+    margin: 2%;
+    flex-grow: 1;
+    overflow: hidden;
+
+    color : black;
+    font-family: "Tw Cen MT";
+    font-size : 2em;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.links a:hover {
+    border: 2pt solid #ff3366;
+    color: #ff3366;
+}
+
+.links a:active {
+    background-color: #ff3366;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    height: 8em;
+    width: 8em;
+    margin: 2%;
 }
 
 .Pag1 {
@@ -409,6 +537,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 .left {
   left: 0;
   background-color: white;
+  overflow: hidden;
 }
 
 
@@ -421,6 +550,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     margin-left: 10%;
     margin-right: 10%;
     max-width: 100%;
+    overflow: hidden;
 }
 
 h1 {
@@ -448,6 +578,15 @@ h3 {
 }
 
 p {
+    font-family: "Tw Cen MT";
+    font-size : 1.5em;
+    font-weight: normal;
+}
+
+pre {
+    border-radius: 15px;
+    border: 1pt solid black;
+    padding: 2em 0;
     font-family: "Tw Cen MT";
     font-size : 1.5em;
     font-weight: normal;

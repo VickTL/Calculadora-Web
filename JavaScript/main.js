@@ -233,7 +233,47 @@ function page31() {
     location.reload(true);
 }
 
+function info1Show() {
+    var y = document.getElementById("Pag1");
+    var x = document.getElementById("info1");
 
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+function info2Show() {
+    var y = document.getElementById("Pag1");
+    var x = document.getElementById("info2");
+
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+function info3Show() {
+    var y = document.getElementById("Pag3");
+    var x = document.getElementById("info3");
+
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+function infoHide() {
+    var y = document.getElementById("info1");
+    var z = document.getElementById("info2");
+    var x = document.getElementById("Pag1");
+
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "none";
+}
+
+function info3Hide() {
+    var y = document.getElementById("info3");
+    var x = document.getElementById("Pag3");
+
+    x.style.display = "block";
+    y.style.display = "none";
+}
 
 function switchValues() {
     var x = document.getElementById("CustomV").value;

@@ -77,13 +77,13 @@
                     <div class="final">
                         <div class="info">
                             <img src="img/info.png" id="icon1">
-                            <p>Cómo mostrar la cuadrícula base</p>
+                            <button class="textbtn" onclick="info1Show()">Cómo mostrar la cuadrícula base</button>
                             <br><br>
                             <img src="img/info.png" id="icon2">
-                            <p>Cómo ajustar el documento</p>
+                            <button class="textbtn" onclick="info2Show()">Cómo ajustar el documento</button>
                         </div>
 
-                        <input type="button" value="LISTO" onclick="medidas();page12();" id="Listobtn">
+                        <input type="button" value="Listo" onclick="medidas();page12();" id="Listobtn">
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
                             <input type="button" name="" value="Menos renglones" onclick="menos()">
                         </div>
                         <div class="divVolver1">
-                            <input type="button" name="Volver" value="VOLVER" onclick="page21()">
+                            <input type="button" name="Volver" value="Volver" onclick="page21()">
                         </div>
 
                     </div>
@@ -153,8 +153,53 @@
                         </div>
 
                         <div class="Creditos">
-                            <p>Esta herramienta ha sido creada por Juan Sevilla.</p>
+                            <button class="textbtn" onclick="info3Show()">Esta herramienta ha sido creada por Juan Sevilla.</button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="info1" id="info1">
+                    <p>Para mostrar la cuadricula base en un documento de Adobe InDesign, selecciona en el menú Superior
+                    la opción <b>Ver > Cuadrículas y guías > Mostrar cuadrícula base.</b></p>
+                    <p>Esta opción mostrará los renglones en un interlineado estándar y fuera de los márgenes,
+                    ahora debes <b>ajustar el documento</b>.</p>
+
+                    <div class="divVolver1">
+                        <input type="button" name="Volver" value="Volver" onclick="infoHide()">
+                    </div>
+                </div>
+
+                <div class="info2" id="info2">
+                    <p>Para ajustar correctamente el documento, selecciona la opción <b>Edición > Preferencias > Cuadrículas</b>.</p>
+                    <p>En este menú modifica:</p>
+                    <pre>
+                    <b>Inicio: </b>0 pt<br>
+                    <b>Respecto a:</b> Margen superior<br>
+                    <b>Incremento cada:</b> (Tu interlineado)<br>
+                    <b>Umbral de visualización:</b> 50% (o menos, en pantallas pequeñas)<br>
+                    <b>Cuadriculas detrás:</b> activado</pre>
+
+                    <div class="divVolver1">
+                        <input type="button" name="Volver" value="Volver" onclick="infoHide()">
+                    </div>
+                </div>
+                <div class="info3" id="info3">
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <h2>Juan Sevilla Sierra</h2>
+                    <p>Alumno de Diseño Digital, U-Tad</p>
+                    <p>2019</p>
+
+                    <div class="links">
+                        <a href="https://artstation.com/JuanVick">Portfolio</a>
+                        <a href="https://github.com/VickTL/Calculadora-Web">Código</a>
+                        <a href="https://paypal.me/juanvick">Donar</a>
+                    </div>
+
+                    <div class="divVolver1">
+                        <input type="button" name="Volver" value="VOLVER" onclick="info3Hide()">
                     </div>
                 </div>
             </div>
@@ -162,23 +207,6 @@
 
         <div class="split right" id="splitRight">
             <div class="mediapantalla" id="mediapantalla"></div>
-
-            <!-- Aquí iría un rectangulo centrado con el siguiente comportamiento:
-                Medida horizontal: la establecida por el usuario
-                Medida vertical: la establecida por el usuario
-
-                (aparece una vez establecidos los dos primeros parámetros)
-
-                Encima se crea otro rectangulo cuando se ponen los MARGENES
-                de medias altura-(margen*2) y anchura-(margen*2).
-
-                Sobre él se ponen "x" rectas horizontales (divisiones) de color secundario
-                de tal forma que la primera y la ultima coincidan con los bordes
-                horizontales del segundo rectangulo y las demás sean equidistantes.
-
-                Cada vez que se actualiza el interlineado se calcLineasActuales y se divide
-                la altura del segundo rectangulo entre las lineasActual.
-            -->
 
             <div class="canvas" id="canvas">
                 <div class="margins" id="margins">
@@ -199,8 +227,8 @@
                 document.getElementById("texto").style.transform = "translate(0, 0)";
                 document.getElementById("texto").style.position = "relative";
                 document.getElementById("body").style.fontSize = "50%";
-                document.getElementById("texto").style.marginTop = "25%";
-                document.getElementById("texto").style.marginBottom = "25%";
+                document.getElementById("texto").style.marginTop = "8%";
+                document.getElementById("texto").style.marginBottom = "8%";
             }
     </script>
 
