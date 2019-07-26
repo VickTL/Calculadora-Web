@@ -196,7 +196,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     height: 7em;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    word-spacing: initial;
     /* border: 1px solid black;*/
 }
 
@@ -224,7 +224,6 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     height: 7em;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .final p {
@@ -240,6 +239,8 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
 
 .info {
     margin: 2%;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .final input[type=button] {
