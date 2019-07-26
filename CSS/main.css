@@ -369,6 +369,7 @@ src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
     border: 2pt solid #ff3366;
     margin: 2%;
     flex-grow: 1;
+    overflow: hidden;
 
     color : #ff3366;
     font-family: "Tw Cen MT";
