@@ -23,7 +23,7 @@ src: local('Tw Cen MT'),
 url("fonts/Tw Cen MT.woff") format('woff'),
 url("fonts/Tw Cen MT.ttf") format("truetype"),
 /*url("fonts/Tw Cen MT.eot") format("eot"),*/
-url("fonts/Tw Cen MT.svg") format("svg"),
+url("fonts/Tw Cen MT.svg") format("svg")
 /*url("fonts/Tw Cen MT.otf") format("opentype")*/;
 }
 
