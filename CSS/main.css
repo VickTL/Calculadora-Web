@@ -53,7 +53,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
 
 .btnForm label span {
     color: black;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: block;
@@ -110,7 +110,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
 .btnForm1 label span {
     padding: 0.5em 0;
     color: black;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: block;
@@ -153,7 +153,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     min-width: 0.1px;
 
 
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 1.8em;
     font-weight: bold;
     text-align: center;
@@ -191,7 +191,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     margin: 2%;
 
     color : black;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -236,7 +236,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     flex-grow: 1;
 
     color : #ff3366;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -277,7 +277,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     margin: 2%;
 
     color : #ff3366;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -312,7 +312,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     overflow: hidden;
 
     color : black;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -402,7 +402,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     overflow: hidden;
 
     color : #ff3366;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -425,7 +425,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
 .textbtn {
     border: none;
      background-color: inherit;
-     font-family: "Tw Cen MT";
+     font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
      font-size : 1.5em;
      font-weight: normal;
      cursor: pointer;
@@ -475,7 +475,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
     overflow: hidden;
 
     color : black;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -534,7 +534,7 @@ url("fonts/Tw Cen MT.svg") format("svg")
 
 h1 {
     color : #ff3366;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 6em;
     font-weight: normal;
     display: inline;
@@ -542,14 +542,14 @@ h1 {
 }
 
 h2 {
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
 }
 
 h3 {
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 2em;
     font-weight: bold;
     display: inline;
@@ -557,7 +557,7 @@ h3 {
 }
 
 p {
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 1.5em;
     font-weight: normal;
 }
@@ -567,7 +567,7 @@ p {
     border: 1pt solid #D0D0D0;
     padding: 0.5em;
     margin: 2%;
-    font-family: "Tw Cen MT";
+    font-family: "Tw Cen MT", Arial, Helvetica, sans-serif ;
     font-size : 1.5em;
     font-weight: normal;
     text-indent: 8%;
