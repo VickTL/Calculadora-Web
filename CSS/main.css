@@ -18,30 +18,12 @@
 font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: normal;
-src: local('Tw Cen MT'), url("fonts/Tw Cen MT.woff") format('woff');
-}
-
-@font-face {
-font-family: 'Tw Cen MT Condensed';
-font-style: normal;
-font-weight: normal;
-src: local('Tw Cen MT Condensed'), url('fonts/TCCM____.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Tw Cen MT Condensed Extra Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Tw Cen MT Condensed Extra Bold'), url('fonts/TCCEB.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Tw Cen MT Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Tw Cen MT Bold'), url('fonts/TCB_____.woff') format('woff');
+src: local('Tw Cen MT'),
+url("fonts/Tw Cen MT.woff") format('woff'),
+url("fonts/Tw Cen MT.woff") format("truetype"),
+url("fonts/Tw Cen MT.eot") format("eot"),
+url("fonts/Tw Cen MT.svg") format("svg"),
+url("fonts/Tw Cen MT.otf") format("otf");
 }
 
 .form  {
