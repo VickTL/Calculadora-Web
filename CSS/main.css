@@ -19,8 +19,8 @@ font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: normal;
 
-src: local('Tw Cen MT'),
-url("fonts/Tw Cen MT.woff") format('woff'),
+src: url("fonts/Tw Cen MT.woff2") format("woff2"),
+url("fonts/Tw Cen MT.woff") format("woff"),
 url("fonts/Tw Cen MT.ttf") format("truetype"),
 /*url("fonts/Tw Cen MT.eot") format("eot"),*/
 url("fonts/Tw Cen MT.svg") format("svg")
