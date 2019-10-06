@@ -5,10 +5,13 @@
  var alturaO = 0;
  var anchuraO = 0;
  var margenes = 0;
+ var margenesIdeal = 0;
  var interlineado = 0;
  var recCreado = false;
  var flagMasMenos = " ";
  var lineasIdeal;
+ var reduccion = 0;
+ var ampliacion = 0;
 
 
 // Medidas estandar en puntos
@@ -138,12 +141,26 @@ function page23() {
     x.style.display = "block";
     y.style.display = "none";
 
+    document.margenesIdeal = ((document.altura-document.interlineado*document.lineasIdeal)/2);
+
+    if(document.reduccion !=0) {
+      for(i=0; i<document.reduccion; i++) {
+        document.margenesIdeal = document.margenesIdeal/0.99;
+      }
+    }
+
+    if(document.ampliacion !=0) {
+      for(i=0; i<document.ampliacion; i++) {
+        document.margenesIdeal = document.margenesIdeal/1.01;
+      }
+    }
+
     document.getElementById("OutDimensiones").innerHTML = document.alturaO+" x "+document.anchuraO+" pt";
     document.getElementById("OutInterlineado").innerHTML = document.getElementById("interlineado").value+" pt";
     document.getElementById("OutDivisiones").innerHTML = document.getElementById("divisiones").value+" x "+document.getElementById("divisiones").value;
     document.getElementById("OutIdeales").innerHTML = document.lineasIdeal;
     document.getElementById("OutMargenes1").innerHTML = document.getElementById("margenes").value+" pt";
-    document.getElementById("OutMargenes2").innerHTML = ((document.altura-document.interlineado*document.lineasIdeal)/2).toFixed(3)+" pt";
+    document.getElementById("OutMargenes2").innerHTML = document.margenesIdeal.toFixed(3)+" pt";
 
 
     var y = document.getElementById("margins");
@@ -395,6 +412,8 @@ function rectangulo() {
 
             document.margenes=document.margenes*0.99;
             document.interlineado=document.interlineado*0.99;
+
+            document.reduccion++;
         }
 
         while(document.anchura<0.4*pxtopt(document.getElementById("mediapantalla").clientWidth) || document.altura<0.4*pxtopt(document.getElementById("mediapantalla").clientHeight)){
@@ -403,9 +422,11 @@ function rectangulo() {
 
             document.margenes=document.margenes*1.01;
             document.interlineado=document.interlineado*1.01;
+
+            document.ampliacion++;
         }
 
-        console.log("Altura: "+document.altura+", Anchura: "+document.anchura+", Margenes: "+document.margenes+", Interlineado: "+document.interlineado);
+        //console.log("Altura: "+document.altura+", Anchura: "+document.anchura+", Margenes: "+document.margenes+", Interlineado: "+document.interlineado);
 
         var x = document.getElementById("canvas");
 
