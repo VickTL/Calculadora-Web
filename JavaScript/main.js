@@ -1,4 +1,5 @@
 // Dados los datos ALTURA, MARGENES, FILAS e INTERLINEADO
+// V2
  var altura = 0;
  var anchura = 0;
  var alturaO = 0;
