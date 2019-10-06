@@ -562,6 +562,11 @@ p {
     font-weight: normal;
 }
 
+#alerta {
+  font-size: 3em;
+  color: red;
+}
+
 .p2 {
     border-radius: 15px;
     border: 1pt solid #D0D0D0;
