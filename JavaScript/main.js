@@ -30,6 +30,13 @@ const hdver = 1440;
 
 //console.log(window.innerWidth);
 
+function logVars() {
+  console.log("Divisiones:" + document.filas);
+  console.log("Altura:" + document.altura);
+  console.log("Margenes:" + document.margenes);
+  console.log("Interlinado:" + document.interlineado);
+}
+
 function pxtopt(alturaCustom) {
     return alturaCustom*0.75;
 }
@@ -47,7 +54,7 @@ function calcLineasActuales() {
     medidaMargenes = document.altura-(2*document.margenes);
     lineasActual = medidaMargenes/document.interlineado;
 
-    console.log(lineasActual);
+    logVars();
 
     return lineasActual;
 }
@@ -124,6 +131,7 @@ function page21() {
 }
 
 function page23() {
+
     var x = document.getElementById("Pag3");
     var y = document.getElementById("Pag2");
 
