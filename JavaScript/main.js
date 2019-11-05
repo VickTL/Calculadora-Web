@@ -141,6 +141,7 @@ function page23() {
     x.style.display = "block";
     y.style.display = "none";
 
+    // Intento fix, no funciona
     document.margenesIdeal = ((document.altura-document.interlineado*document.lineasIdeal)/2);
 
     if(document.reduccion !=0) {
@@ -154,6 +155,7 @@ function page23() {
         document.margenesIdeal = document.margenesIdeal/1.01;
       }
     }
+    // Hasta aquí
 
     document.getElementById("OutDimensiones").innerHTML = document.alturaO+" x "+document.anchuraO+" pt";
     document.getElementById("OutInterlineado").innerHTML = document.getElementById("interlineado").value+" pt";
